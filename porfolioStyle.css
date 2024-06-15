@@ -1,0 +1,268 @@
+/* Quit margin of everything  */
+* {
+    margin: 0;
+}
+
+/* Config body to flex for put footer at botom */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    color: #f3f3f3;
+}
+
+/* -------  Nav styles */
+nav {
+    background-color: #282b39;
+    height: 7vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1;
+
+}
+
+/* a tag on nav */
+nav a {
+    text-decoration: none;
+    color: #f3f3f3;
+}
+
+nav a:visited {
+    color: #f3f3f3;
+}
+
+nav a:hover {
+    transform: scale(1.3, 1.3);
+    transition-duration: 0.7s;
+
+}
+
+/* ---------- main content */
+#presentation {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url("Imgs/water-reflecting-shore-surrounded-by-mountains-beautiful-sky Large.jpeg");
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#presentation p {
+    display: block;
+    width: 80vw;
+    padding-left: 10vw;
+    font-size: 3.0em;
+}
+
+/* ------------ Footer  */
+footer {
+    display: flex;
+    margin-bottom: 0px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #282b39;
+    height: 7vh;
+    margin-bottom: 7vh;
+}
+
+footer p {
+    margin-left: 5vw;
+}
+
+.social {
+    margin-right: 5vw;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.social a img {
+    width: 4vh;
+    border-radius: 50%;
+}
+
+
+/* ----------- app sheet */
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    gap: 3vw;
+    margin: 3vw;
+    height: auto;
+    margin-bottom: 7vh;
+    flex: 1;
+}
+
+.card-text {
+    width: auto;
+    padding-left: 0px;
+    font-size: 1em;
+}
+
+.card {
+    position: static;
+    box-shadow: 3px 3px 5px rgb(197, 197, 197);
+
+}
+
+.cards-container a {
+    text-decoration: none;
+    color: black;
+}
+
+.cards-container a:visited {
+    color: black;
+}
+
+.cards-container a:hover {
+    transform: scale(1.05, 1.05);
+    transition-duration: 0.7s;
+    color: black
+}
+
+.card img {
+    width: 100%;
+    height: 42vh;
+    object-fit: cover;
+
+}
+
+/* --------- resume sheet */
+#resumeFrame {
+    margin-top: 5vh;
+    width: 80%;
+    height: 85vh;
+}
+
+
+/* ------------- me sheet */
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    background-image: none;
+    gap: 3vw;
+    margin: 3vw;
+    height: auto;
+    margin-bottom: 7vh;
+    flex: 1;
+}
+
+.carousel-container h2 {
+    color: black;
+    margin: 0;
+}
+
+.carousel {
+    width: 80vw;
+    height: 33vh;
+    display: flex;
+    justify-content: center;
+    /* Opcional: Centrar horizontalmente */
+    align-items: center;
+    /* Opcional: Centrar verticalmente */
+    overflow: hidden;
+}
+
+/* .carusel-item img {
+    width: 100%;
+    height: 33vh;
+} */
+
+/* -------------- when the screen size is 722px or more */
+@media screen and (min-width:722px) {
+    nav {
+        bottom: auto;
+    }
+
+    #presentation {
+        margin-top: 7vh;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url("Imgs/karersee-surrounded-by-forests-dolomites-cloudy-sky-italy\ Large.jpeg");
+
+    }
+
+    footer {
+
+        margin-bottom: 0px;
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-image: none;
+        margin-bottom: none;
+        margin-top: 10vh;
+    }
+
+    .carousel-container {
+        margin-top: 10vh;
+
+    }
+
+    .carousel {
+        width: 70vw;
+        height: 70vh;
+    }
+}
+
+/* -------------- when the screen size is 1350px or more */
+
+@media screen and (min-width:1350px) {
+    nav {
+        bottom: auto;
+    }
+
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-image: none;
+        margin-bottom: none;
+        margin-top: 10vh;
+    }
+
+    .carousel {
+        width: 60vw;
+        height: 90vh;
+    }
+}
+
+
+
+
+
+/* colores a usar  */
+
+.color1 {
+    color: #1d468c;
+}
+
+.color2 {
+    color: #266fb5;
+}
+
+.color3 {
+    color: #2ba0c8;
+}
+
+.color4 {
+    color: #aee3e2;
+}
+
+.color5 {
+    color: #f3f3f3;
+}
