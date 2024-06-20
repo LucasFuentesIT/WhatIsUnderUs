@@ -1,4 +1,4 @@
-alert('To work properly you should have the geolocation enable')
+// alert('To work properly you should have the geolocation enable')
 //lo primero que se carga en la web (coordenadas)
 function getLocation() {
     if (navigator.geolocation) {
@@ -12,8 +12,7 @@ function showPosition(position) {
     lng = position.coords.longitude;
     console.log("Latitude: " + lat);
     console.log("Longitude: " + lng);
-    document.getElementById('inputLat').value = lat;
-    document.getElementById('inputLng').value = lng;
+    myLocation();
 }
 const myLocation = () => {
     getLocation()
