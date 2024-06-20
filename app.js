@@ -1,3 +1,4 @@
+alert('To work properly you should have the geolocation enable')
 //lo primero que se carga en la web (coordenadas)
 function getLocation() {
     if (navigator.geolocation) {
@@ -22,7 +23,8 @@ const myLocation = () => {
 const invert = () => {
     // document.getElementById('coordenadas') = `Lat:${Number(document.getElementById('inputLat').value)} Lng:${Number(document.getElementById('inputLng').value)}`
     invertY = Number(document.getElementById('inputLat').value) * (-1);
-    invertX = ((Number(document.getElementById('inputLng').value) + 180) % 360);
+    if ((Number(document.getElementById('inputLng').value)) > 0) { invertX = ((Number(document.getElementById('inputLng').value) - 180) % 360); }
+    else { invertX = ((Number(document.getElementById('inputLng').value) + 180) % 360) };
     console.log(invertY, invertX)
     console.log(`https://www.google.com.uy/maps/@${invertY},${invertX},7z?hl=es-419`)
     document.getElementById('inputLat').value = invertY;
@@ -32,7 +34,9 @@ const invert = () => {
 }
 
 
-// como poner un marcador al realizar la busqueda
-// poner un boton que nos devuelva a nuestro origen 
+
+
+// como poner un marcador al realizar la busqueda 
+// poner un boton que nos devuelva a nuestro origen DONE
 //jugar con otras clases de botones de funciones 
 // tratar de buscar la tierra mas cercana 

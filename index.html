@@ -5,12 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>What is under us</title>
-    <link rel="stylesheet" href="./porfolioStyle.css">
-    <link rel="stylesheet" href="./stylesheets.css">
+    <link rel="stylesheet" href="/porfolioStyle.css">
+    <link rel="stylesheet" href="/stylesheets.css">
 </head>
 
 <body onload="getLocation()">
-    <nav></nav>
+    <nav>
+        <p>Lucas Fuentes™</p>
+        <a href="https://luksdelos.github.io/Porfolio/" target="_blank">
+            <p>Go to my porfolio</p>
+        </a>
+        <div class="social">
+            <a href="https://www.instagram.com/lucasfuentes94" target="_blank"><img src="Imgs/Instagram Logo.png"
+                    alt="instagram"></a>
+            <a href="https://www.linkedin.com/in/lucas-fuentes-it/" target="_blank"><img src="Imgs/Logo In.png"
+                    alt="linkedIn"></a>
+            <a href="https://github.com/luksdelos" target="_blank"><img src="Imgs/GitHub-Mark-ea2971cee799.png"
+                    alt="gitHub"></a>
+        </div>
+    </nav>
     <main>
         <div id="mapContainer">
             <iframe id="maps"
@@ -20,10 +33,13 @@
         </div>
         <div id="coordsContainer">
             <form action="">
-                <label for="inputLat">Latitud</label>
-                <input id="inputLat" type="text" placeholder="ingrese latitud">
-                <label for="inputLng">Longitud</label>
-                <input id="inputLng" type="text" placeholder="ingrese longitud">
+                <div>
+                    <label for="inputLat">Latitud</label>
+                    <input id="inputLat" type="text" placeholder="ingrese latitud">
+                </div>
+                <div><label for="inputLng">Longitud</label>
+                    <input id="inputLng" type="text" placeholder="ingrese longitud">
+                </div>
                 <button type="button" onclick="invert()">Go to the down side</button>
                 <button type="button" onclick="myLocation()">My location</button>
 
@@ -32,17 +48,8 @@
     </main>
     <!-- footer de porfolio -->
     <footer>
-        <p>Lucas Fuentes™</p>
-        <div class="social">
-            <a href="https://www.instagram.com/lucasfuentes94" target="_blank"><img src="Imgs/Instagram Logo.png"
-                    alt="instagram"></a>
-            <a href="https://www.linkedin.com/in/lucas-fuentes-it/" target="_blank"><img src="Imgs/Logo In.png"
-                    alt="linkedIn"></a>
-            <a href="https://github.com/luksdelos" target="_blank"><img src="Imgs/GitHub-Mark-ea2971cee799.png"
-                    alt="gitHub"></a>
-        </div>
     </footer>
-    <script src="./app.js"></script>
+    <script src="/app.js"></script>
 </body>
 
 </html>
